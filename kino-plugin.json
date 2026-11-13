@@ -1,0 +1,89 @@
+{
+  "id": "yetipelis",
+  "name": "YetiPelis",
+  "version": "1.0.1",
+  "apiVersion": 6,
+  "entry": "plugin.js",
+  "description": "Películas y series online en español latino, castellano y subtitulado desde yetipelis.com",
+  "author": "Hotaru Yume",
+  "creator": "hotaruyume",
+  "homepage": "https://yetipelis.com",
+  "hosts": [
+    "yetipelis.com",
+    "*.yetipelis.com",
+    "api-encrypted.moviemaster.lat",
+    "*.moviemaster.lat",
+    "moviemaster.lat"
+  ],
+  "streamHosts": "any",
+  "capabilities": [
+    "search",
+    "home",
+    "browse",
+    "episodes",
+    "resolve"
+  ],
+  "categories": [
+    "movies",
+    "series"
+  ],
+  "color": "#38BDF8",
+  "icon": "icon.png",
+  "theme": {
+    "accent": "#38BDF8",
+    "onAccent": "#07101C",
+    "background": "#07101C",
+    "surface": "#0F1B2D",
+    "highlight": "#7DD3FC"
+  },
+  "settings": [
+    {
+      "key": "preferLang",
+      "label": "Audio preferido",
+      "type": "select",
+      "default": "LAT",
+      "options": [
+        {
+          "value": "LAT",
+          "label": "Latino"
+        },
+        {
+          "value": "ESP",
+          "label": "Castellano"
+        },
+        {
+          "value": "SUB",
+          "label": "Subtitulado"
+        },
+        {
+          "value": "ENG",
+          "label": "Inglés"
+        },
+        {
+          "value": "auto",
+          "label": "Automático"
+        }
+      ]
+    },
+    {
+      "key": "preferMode",
+      "label": "Tipo de servidor",
+      "type": "select",
+      "default": "directo",
+      "options": [
+        {
+          "value": "directo",
+          "label": "Directo (mejor)"
+        },
+        {
+          "value": "auto",
+          "label": "Automático"
+        },
+        {
+          "value": "proxy",
+          "label": "Proxy"
+        }
+      ]
+    }
+  ]
+}
